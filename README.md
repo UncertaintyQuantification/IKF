@@ -9,7 +9,7 @@ This software is distributed under the terms of the GNU GENERAL PUBLIC LICENSE V
 The repository contains code and data to reproduce all numerical results from the paper:
 `simulation_Vicsek` - Code for the Vicsek model example
 `simulation_Vicsek_variation` - Code for the modified Vicsek model example
-`real_data_cell` - Code for the cell tracking example
+`real_cell_experiments` - Code for the cell tracking example
 `functions` - Required R functions
 `missing_lattice` - Numerical examples for filling missing lattice data
 
