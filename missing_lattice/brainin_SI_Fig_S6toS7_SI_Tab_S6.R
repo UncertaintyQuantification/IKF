@@ -7,8 +7,8 @@ library(spNNGP)
 library(laGP)
 library(GPvecchia)
 source('https://raw.githubusercontent.com/katzfuss-group/scaledVecchia/master/vecchia_scaled.R')
-sourceCpp(file='../src/functions.cpp')  ###
-source('../functions/functions_lattice.R')
+sourceCpp(file='src/functions.cpp')  ###
+source('functions_lattice.R')
 
 n_repeat = 20
 
