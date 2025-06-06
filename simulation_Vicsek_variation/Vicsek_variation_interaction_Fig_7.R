@@ -65,10 +65,6 @@ upper95_f = est@predictions$upper95_f
 
 
 
-# #save.image('Vicsek_variation_n900_T10_sig01_results.RData')
-load('Vicsek_variation_n900_T10_sig01_results.RData')
-
-
 dat_kernel1=data.frame(input=rep(testing_v_input,2),
                        output=c(testing_v_output,pred_mean_v),
                        type=factor(rep(c("Truth","Prediction"),each=length(testing_v_input)),levels=c("Truth","Prediction")))

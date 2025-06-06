@@ -108,11 +108,11 @@ for(i_s in 1:dim(settings)[1]){
     lower95_f = est@predictions$lower95_f
     upper95_f = est@predictions$upper95_f
     
-    NRMSE_v = mean( (pred_mean_v-testing_v_output)^2)/sd(testing_v_output)
+    NRMSE_v = sqrt(mean( (pred_mean_v-testing_v_output)^2))/sd(testing_v_output)
     coverage95_v = mean(testing_v_output<upper95_v & testing_v_output>lower95_v)
     length95_v = mean(upper95_v-lower95_v)
     
-    NRMSE_f = mean( (pred_mean_f-testing_f_output)^2)/sd(testing_f_output)
+    NRMSE_f =  sqrt(mean( (pred_mean_f-testing_f_output)^2))/sd(testing_f_output)
     coverage95_f = mean(testing_f_output<upper95_f & testing_f_output>lower95_f)
     length95_f = mean(upper95_f-lower95_f)
     
@@ -144,13 +144,6 @@ for(i_s in 1:dim(settings)[1]){
   
 }
 
-
-# save.image('record_est_param_Vicsek_variation_matern.RData')
-# save.image('record_est_param_Vicsek_variation_exp.RData')
-
-
-load("record_est_param_Vicsek_variation_matern_5_2_Feb_18.RData")
-#load("record_est_param_Vicsek_variation_exp_Feb_18.RData")
 
 
 apply(nrmse_v_rec, 1, mean)
