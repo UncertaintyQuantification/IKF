@@ -1,4 +1,4 @@
-#### functions copied from the package ####
+#### functions copied from the FastGaSP package ####
 IKF = function(beta, tilde_nu, delta_x, output, kernel_type=kernel_type){
   if(kernel_type=='matern_5_2'){
     lambda=sqrt(5)*beta
